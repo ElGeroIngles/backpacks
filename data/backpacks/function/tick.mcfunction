@@ -11,3 +11,6 @@ execute as @e[type=furnace_minecart,tag=backpacks.furnace,nbt={Fuel:0s},tag=!bac
 
 # Kill model if minecart is killed:
 kill @e[tag=backpacks.custom_minecart_mounted,predicate=!backpacks:has_vehicle]
+
+# Account for droppped items in menus:
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{menu_backpack:{}}}}}] at @s run function backpacks:bp/container/interaction/dropped/main with entity @s Item.components."minecraft:custom_data".menu_backpack
