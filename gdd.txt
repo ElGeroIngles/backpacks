@@ -1,1 +1,13 @@
 pillar los datos del item con la misma id del jugador
+
+- Commit:
+
+• 🐛: Bug related
+• ✨: Feature added
+• 🎨: Style related
+• 🎵: SFX related
+• 🛠️: Touched something
+• ❌: Removed something
+• 📝: Docs
+• ❤️: Testing
+• 💡: change in gdd.txt (idea/change)
