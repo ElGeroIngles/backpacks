@@ -6,8 +6,8 @@ tellraw @a {"score":{"name":"@s","objective":"backpacks.pages"},"color":"gold"}
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.backpack_menu_page_placeholder","backpacks.invisible_minecart"]}
 
 # Add items:
-execute unless score $first_pages backpacks.pages = @s backpacks.pages run item replace entity @n[tag=backpacks.backpack_menu_page_placeholder] container.18 with arrow[custom_name='{"text":"Go Back","color":"green","italic":false}',custom_data={menu_backpack:{go_back:1b,Slot:18}}]
-execute if score @s backpacks.pages matches 2.. run item replace entity @n[tag=backpacks.backpack_menu_page_placeholder] container.26 with arrow[custom_name='{"text":"Next Page","color":"green","italic":false}',custom_data={menu_backpack:{next_page:1b,Slot:26}}]
+execute unless score $first_pages backpacks.pages = @s backpacks.pages run item replace entity @n[tag=backpacks.backpack_menu_page_placeholder] container.18 with arrow[custom_name='{"text":"Go Back","color":"green","italic":false}',custom_data={menu_backpack:{go_back:1b,Slot:18}},custom_model_data=9951632]
+execute if score @s backpacks.pages matches 2.. run item replace entity @n[tag=backpacks.backpack_menu_page_placeholder] container.26 with arrow[custom_name='{"text":"Next Page","color":"green","italic":false}',custom_data={menu_backpack:{next_page:1b,Slot:26}},custom_model_data=9951631]
 
 # Final page:
 execute if score @s backpacks.pages matches 1 run scoreboard players operation @n[tag=backpacks.backpack_menu_page_placeholder] backpacks.slots = $pages backpacks.pages

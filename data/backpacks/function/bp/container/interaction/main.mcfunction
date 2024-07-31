@@ -12,7 +12,8 @@ execute if predicate backpacks:interaction/type/back run scoreboard players remo
 execute if predicate backpacks:interaction/type/next run scoreboard players add @n[tag=backpacks.this_backpack_menu] backpacks.pages 1
 
 # Update menu:
-execute as @n[tag=backpacks.this_backpack_menu] at @s run function backpacks:bp/container/update/main
+execute if predicate backpacks:interaction/type/any as @n[tag=backpacks.this_backpack_menu] at @s run function backpacks:bp/container/update/main
+execute if predicate backpacks:interaction/type/any run playsound minecraft:item.armor.equip_leather
 
 # Clear:
 clear @s *[custom_data~{menu_backpack:{}}]
