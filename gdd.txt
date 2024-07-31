@@ -1,0 +1,1 @@
+pillar los datos del item con la misma id del jugador
