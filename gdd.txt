@@ -16,6 +16,5 @@
     • Backpack del enderchest.
     • Crafteos (con sus colores).
     • Modelos.
-    • Resetear backpack al abrirla (y añadirle playsound al abrirla tmb).
     • Advancements.
     • Añadir support de Trinkets (si se puede).
