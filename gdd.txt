@@ -12,9 +12,9 @@
 
 - Por Hacer:
     • Pillar los datos del item con la misma id del jugador.
-    • Sistema de seguridad para que otros jugadores no puedan usar tu backpack.
     • Backpack del enderchest.
-    • Crafteos (con sus colores).
+    • Sistema de seguridad para que otros jugadores no puedan usar tu backpack.
     • Modelos.
-    • Advancements.
+    • Crafteos (con sus colores).
     • Añadir support de Trinkets (si se puede).
+    • Advancements.
