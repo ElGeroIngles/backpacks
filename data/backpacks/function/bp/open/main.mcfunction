@@ -3,6 +3,10 @@
 # Get menu:
 execute as @e[tag=backpacks.backpack_menu_ready] if score @s backpacks.id = @p[advancements={backpacks:open=true}] backpacks.id run tag @s add backpacks.backpack_menu_opened
 
+# If opener is not owner:
+execute unless entity @n[tag=backpacks.backpack_menu_opened] run function backpacks:bp/open/not_owner
+execute unless entity @n[tag=backpacks.backpack_menu_opened] run return fail
+
 # Save:
 execute as @n[tag=backpacks.backpack_menu_opened] if score @s backpacks.type matches 0 run function backpacks:bp/container/save/main
 
