@@ -10,7 +10,8 @@ execute store result storage backpacks:temp item.id int 1 run scoreboard players
 execute store result storage backpacks:temp item.page int 1 run scoreboard players get @s backpacks.pages
 
 # Search:
-function backpacks:bp/container/save/search_inv with storage backpacks:temp item
+execute if entity @p[tag=backpacks.backpack_menu_save_this_player,predicate=backpacks:bp/any] run function backpacks:bp/container/save/search_inv with storage backpacks:temp item
+execute if entity @p[tag=backpacks.backpack_menu_save_this_player,predicate=!backpacks:bp/any] run function backpacks:bp/container/save/search_entity with storage backpacks:temp item
 
 # Reset:
 tag @p[tag=backpacks.backpack_menu_save_this_player] remove backpacks.backpack_menu_save_this_player
