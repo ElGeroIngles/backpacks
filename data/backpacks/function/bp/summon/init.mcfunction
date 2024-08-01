@@ -1,8 +1,8 @@
 # @s & @p[advancements={backpacks:summon_bp=true}] is the player at @s! | @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] is the menu!
 
 # Move item to the backpack:
-execute if predicate backpacks:bp/offhand run item replace entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0 from entity @s weapon.offhand
-execute if predicate backpacks:bp/mainhand run item replace entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0 from entity @s weapon.mainhand
+execute if function backpacks:bp/check/offhand run item replace entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0 from entity @s weapon.offhand
+execute if function backpacks:bp/check/mainhand run item replace entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0 from entity @s weapon.mainhand
 
 # Set Id:
 execute store result entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items[0].components."minecraft:custom_data".backpacks.init.id int 1 run scoreboard players get $global backpacks.id
@@ -18,8 +18,8 @@ tellraw @a {"score":{"name":"@n[tag=backpacks.backpack_menu,tag=!backpacks.backp
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function backpacks:bp/container/init/main
 
 # Move item to the player:
-execute if predicate backpacks:bp/offhand run item replace entity @s weapon.offhand from entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0
-execute if predicate backpacks:bp/mainhand run item replace entity @s weapon.mainhand from entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0
+execute if function backpacks:bp/check/offhand run item replace entity @s weapon.offhand from entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0
+execute if function backpacks:bp/check/mainhand run item replace entity @s weapon.mainhand from entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0
 
 # Clear container:
 item replace entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] container.0 with air
