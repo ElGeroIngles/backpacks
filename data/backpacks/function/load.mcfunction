@@ -4,6 +4,7 @@ tellraw @a [{"text":"[BP] ","color":"yellow"},{"text":"Reloading...","color":"ye
 scoreboard objectives add backpacks.id dummy
 scoreboard objectives add backpacks.slots dummy
 scoreboard objectives add backpacks.pages dummy
+scoreboard objectives add backpacks.type dummy
 
 # Scorebaord tweaks:
 execute unless score $global backpacks.id matches 0.. run scoreboard players set $global backpacks.id 0
