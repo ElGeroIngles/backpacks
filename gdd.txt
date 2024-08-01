@@ -1,5 +1,3 @@
-pillar los datos del item con la misma id del jugador
-
 - Commit:
 
 • 🐛: Bug related
@@ -11,3 +9,13 @@ pillar los datos del item con la misma id del jugador
 • 📝: Docs
 • ❤️: Testing
 • 💡: change in gdd.txt (idea/change)
+
+- Por Hacer:
+    • Pillar los datos del item con la misma id del jugador.
+    • Sistema de seguridad para que otros jugadores no puedan usar tu backpack.
+    • Backpack del enderchest.
+    • Crafteos (con sus colores).
+    • Modelos.
+    • Resetear backpack al abrirla (y añadirle playsound al abrirla tmb).
+    • Advancements.
+    • Añadir support de Trinkets (si se puede).
