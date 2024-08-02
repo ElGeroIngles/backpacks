@@ -12,6 +12,7 @@
 
 - Por Hacer:
     • Sistema de upgradeo.
+    • El nombre de la backpack tiene que esta acorde del item_name.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).
