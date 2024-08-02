@@ -13,5 +13,6 @@
 - Por Hacer:
     • Sistema de upgradeo.
     • Crafteos (con sus colores).
+    • Idiomas.
     • Añadir support de Trinkets (si se puede).
     • Advancements.
