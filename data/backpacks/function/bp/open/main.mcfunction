@@ -18,6 +18,11 @@ execute as @n[tag=backpacks.backpack_menu_opened] run function backpacks:bp/cont
 execute if score @n[tag=backpacks.backpack_menu_opened] backpacks.type matches 0 run playsound item.armor.equip_leather
 execute if score @n[tag=backpacks.backpack_menu_opened] backpacks.type matches 1.. run playsound block.ender_chest.open
 
+# Summon interaction for more protection:
+execute at @n[tag=backpacks.backpack_menu_opened] run summon interaction ~ ~-0.01 ~ {NoGravity:1b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,height:0.75f,Tags:["backpacks.interaction"]}
+scoreboard players operation @n[tag=backpacks.interaction,tag=!backpacks.interaction_ready] backpacks.id = @s backpacks.id
+tag @n[tag=backpacks.interaction,tag=!backpacks.interaction_ready] add backpacks.interaction_ready
+
 # Reset:
 tag @n[tag=backpacks.backpack_menu_opened] add backpacks.backpack_menu_opened
 advancement revoke @s only backpacks:open
