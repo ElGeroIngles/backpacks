@@ -1,5 +1,6 @@
 {
     "values": [
-    "backpacks:load"
+    "backpacks:load",
+    "senti:zprivate/load"
     ]
 }
