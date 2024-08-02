@@ -1,5 +1,4 @@
 # @s is the menu!
-$say $(page)
 
 # Update menu:
 tag @s add backpacks.this_update_backpack_menu

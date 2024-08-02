@@ -1,10 +1,8 @@
 # @p[advancements={backpacks:summon_bp=true}] is the player at him! | @s is the menu!
 # Fill the menu starting from the end:
-say sdklf
-$say $(c_slot)
+
 # Check if we need to stop:
 $scoreboard players set $current backpacks.slots $(c_slot)
-execute if score $current backpacks.slots <= @s backpacks.slots run say return
 execute if score $current backpacks.slots <= @s backpacks.slots run return 0
 
 # Place:

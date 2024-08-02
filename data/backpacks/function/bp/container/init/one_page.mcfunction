@@ -10,4 +10,3 @@ function backpacks:bp/container/init/fill {c_slot:26}
 # Save items data:
 data modify entity @s Items[0].components."minecraft:custom_data".backpacks.contents.pages append from entity @s Items
 data remove entity @s Items[0].components."minecraft:custom_data".backpacks.contents.pages[0][0]
-# tellraw @a {"nbt":"Items[0].components.\"minecraft:custom_data\"","entity":"@s","color":"gold"}

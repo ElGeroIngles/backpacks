@@ -1,7 +1,5 @@
 # @p[advancements={backpacks:summon_bp=true}] is the player at him! | @s is the menu! | The menu has the backpack item in container.0!
 
-tellraw @a {"score":{"name":"@s","objective":"backpacks.pages"},"color":"gold"}
-
 # Make placeholder menu:
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.backpack_menu_page_placeholder","backpacks.invisible_minecart"]}
 
@@ -12,8 +10,6 @@ execute if score @s backpacks.pages matches 2.. run item replace entity @n[tag=b
 # Final page:
 execute if score @s backpacks.pages matches 1 run scoreboard players operation @n[tag=backpacks.backpack_menu_page_placeholder] backpacks.slots = $pages backpacks.pages
 execute if score @s backpacks.pages matches 1 run scoreboard players remove @n[tag=backpacks.backpack_menu_page_placeholder] backpacks.slots 1
-execute if score @s backpacks.pages matches 1 run say me:
-execute if score @s backpacks.pages matches 1 run tellraw @a {"score":{"name":"@s","objective":"backpacks.slots"},"color":"gold"}
 execute if score @s backpacks.pages matches 1 as @n[tag=backpacks.backpack_menu_page_placeholder] run function backpacks:bp/container/init/fill {c_slot:26}
 
 # Set data:

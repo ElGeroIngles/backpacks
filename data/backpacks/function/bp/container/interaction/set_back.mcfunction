@@ -1,8 +1,5 @@
 # @s & @p[advancements={backpacks:holding_bp=true}] is the player at @s! | Its menu is @n[tag=backpacks.this_backpack_menu]!
 
-$say $(Slot)
-$say $(player_Slot)
-
 # Give back the items:
 $execute if data entity @n[tag=backpacks.this_backpack_menu] Items[{Slot:$(Slot)b}] run function backpacks:bp/container/interaction/give_back/main with storage backpacks:temp set_back
 
