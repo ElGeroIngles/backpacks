@@ -11,7 +11,7 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Modelos.
+    • Sistema de upgradeo.
     • Crafteos (con sus colores).
     • Añadir support de Trinkets (si se puede).
     • Advancements.
