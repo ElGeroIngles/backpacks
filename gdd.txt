@@ -11,7 +11,6 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Sistema de seguridad para que otros jugadores no puedan usar tu backpack.
     • Modelos.
     • Crafteos (con sus colores).
     • Añadir support de Trinkets (si se puede).
