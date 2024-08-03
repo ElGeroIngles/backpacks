@@ -12,6 +12,7 @@
 
 - Por Hacer:
     • Que no puedas meter la backpack dentro de la backpack.
+    • La backpack no se guarda si la coges con el cursor mientras la abres.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).
