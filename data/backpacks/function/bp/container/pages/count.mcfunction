@@ -1,4 +1,4 @@
-# @p[advancements={backpacks:summon_bp=true}] is the player at him! | @s is the menu! | The menu has the backpack item in container.0!
+# @p[advancements={backpacks:summon_bp=true}] is the player at him! | @s is the menu! | @s backpacks.pages is the number of pages & $pages backpacks.pages is the remaining slots!
 
 # Add one page:
 scoreboard players add @s backpacks.pages 1

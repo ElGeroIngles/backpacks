@@ -13,6 +13,9 @@ scoreboard players add $global backpacks.id 1
 # Get data:
 execute store result score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.slots run data get entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items[0].components."minecraft:custom_data".backpacks.contents.slots
 
+# Set slots data:
+execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run data modify entity @s Items[0].components."minecraft:custom_data".backpacks.init.slots set from entity @s Items[0].components."minecraft:custom_data".backpacks.contents.slots
+
 # Set container:
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function backpacks:bp/container/init/main
 
