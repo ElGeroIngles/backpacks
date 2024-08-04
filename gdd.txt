@@ -11,7 +11,6 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Cambiar los "if function" de con que mano estas sosteniendo la backpack.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).
