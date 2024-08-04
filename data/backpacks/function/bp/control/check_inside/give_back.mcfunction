@@ -1,7 +1,4 @@
 # @p[advancements={backpacks:not_holding_bp=true}] is the player at player! | @s & @n[tag=backpacks.backpack_kill_this] are the menu!
-# say give back
-# $say $(Slot)
-# $say $(id)
 
 # Save holding item:
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.save_holding_give_back","backpacks.invisible_minecart"]}
