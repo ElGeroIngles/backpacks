@@ -12,6 +12,7 @@
 
 - Por Hacer:
     • La backpack no se guarda si la coges con el cursor mientras la abres.
+    • Cambiar los "if function" de con que mano estas sosteniendo la backpack.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).
