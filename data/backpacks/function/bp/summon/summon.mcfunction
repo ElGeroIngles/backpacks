@@ -12,25 +12,26 @@ function backpacks:bp/summon/id
 # Check if slots count needs to be updated:
 function backpacks:bp/summon/check
 
+# Get which hand has it:
+function backpacks:bp/check/offhand
+function backpacks:bp/check/mainhand
+
 # Set contents:
-execute if function backpacks:bp/check/offhand if score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.type matches 0 run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".backpacks.contents.pages[0]
-execute if function backpacks:bp/check/mainhand if score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.type matches 0 run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items set from entity @s SelectedItem.components."minecraft:custom_data".backpacks.contents.pages[0]
+execute if entity @s[tag=backpacks.offhand] if score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.type matches 0 run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".backpacks.contents.pages[0]
+execute if entity @s[tag=backpacks.mainhand] if score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.type matches 0 run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items set from entity @s SelectedItem.components."minecraft:custom_data".backpacks.contents.pages[0]
 
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] if score @s backpacks.type matches 1.. run function backpacks:bp/container/enderchest/copy
 
 # Set name:
-execute if function backpacks:bp/check/offhand run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s Inventory[{Slot:-106b}].components."minecraft:item_name"
-execute if function backpacks:bp/check/mainhand run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s SelectedItem.components."minecraft:item_name"
+execute if entity @s[tag=backpacks.offhand] run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s Inventory[{Slot:-106b}].components."minecraft:item_name"
+execute if entity @s[tag=backpacks.mainhand] run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s SelectedItem.components."minecraft:item_name"
 
-execute if function backpacks:bp/check/offhand run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_name"
-execute if function backpacks:bp/check/mainhand run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s SelectedItem.components."minecraft:custom_name"
+execute if entity @s[tag=backpacks.offhand] run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_name"
+execute if entity @s[tag=backpacks.mainhand] run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] CustomName set from entity @s SelectedItem.components."minecraft:custom_name"
 
 # Scores:
 scoreboard players set @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.pages 0
 
 # Tags:
-execute if function backpacks:bp/check/offhand run tag @s add backpacks.offhand
-execute if function backpacks:bp/check/mainhand run tag @s add backpacks.mainhand
-
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function senti:start
 tag @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] add backpacks.backpack_menu_ready
