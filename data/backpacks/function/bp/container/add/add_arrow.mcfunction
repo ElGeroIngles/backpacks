@@ -4,7 +4,7 @@
 function backpacks:bp/container/pages/save_for_next
 
 # Summon temp container:
-summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.save_last","backpacks.invisible_minecart"],CustomName:'{"italic":false,"text":"Backpack"}'}
+summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.save_last","backpacks.invisible_minecart"]}
 
 # Set data:
 data modify entity @n[tag=backpacks.save_last] Items set from entity @s Items[0].components."minecraft:custom_data".backpacks.contents.pages[-1]

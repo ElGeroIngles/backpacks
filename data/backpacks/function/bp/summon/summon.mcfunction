@@ -29,5 +29,8 @@ execute if function backpacks:bp/check/mainhand run data modify entity @n[tag=ba
 scoreboard players set @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.pages 0
 
 # Tags:
+execute if function backpacks:bp/check/offhand run tag @s add backpacks.offhand
+execute if function backpacks:bp/check/mainhand run tag @s add backpacks.mainhand
+
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function senti:start
 tag @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] add backpacks.backpack_menu_ready
