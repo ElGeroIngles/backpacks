@@ -12,7 +12,6 @@
 
 - Por Hacer:
     • La backpack no guarda sus contents cuando al upgradearla se dropea.
-    • Añadir paginas nuevas a backpacks con 27 slots no funciona.
     • A veces las paginas añadidas nuevas quitan arrows para ir atras.
     • Crafteos (con sus colores).
     • Idiomas.

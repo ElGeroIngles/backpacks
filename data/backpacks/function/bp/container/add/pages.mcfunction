@@ -4,5 +4,6 @@
 function backpacks:bp/container/add/add_arrow
 
 # Add pages:
+scoreboard players set $first_pages backpacks.pages -1
 scoreboard players operation @s backpacks.pages -= $pages_old backpacks.pages
 function backpacks:bp/container/pages/add
