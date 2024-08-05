@@ -11,7 +11,6 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • La backpack no guarda sus contents cuando al upgradearla se dropea.
     • A veces las paginas añadidas nuevas quitan arrows para ir atras.
     • Crafteos (con sus colores).
     • Idiomas.

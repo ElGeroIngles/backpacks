@@ -14,3 +14,7 @@ kill @e[tag=backpacks.custom_minecart_mounted,predicate=!backpacks:has_vehicle]
 
 # Account for droppped items in menus:
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{menu_backpack:{}}}}}] at @s run function backpacks:bp/container/interaction/dropped/main with entity @s Item.components."minecraft:custom_data".menu_backpack
+
+# Upgrade backpacks if thrown (using advancements to check for the recipe is too fast):
+execute as @e[type=item,nbt={Item:{id:"minecraft:chain_command_block",components:{"minecraft:custom_data":{backpacks:{real_backpack:1b,tier:0}}}}}] run function backpacks:bp/upgrade/to_2/item
+execute as @e[type=item,nbt={Item:{id:"minecraft:repeating_command_block",components:{"minecraft:custom_data":{backpacks:{real_backpack:1b,tier:1}}}}}] run function backpacks:bp/upgrade/to_3/item
