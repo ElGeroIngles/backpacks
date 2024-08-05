@@ -12,8 +12,7 @@
     "result": {
       "id": "minecraft:chain_command_block",
       "components": {
-        "minecraft:item_name": "{\"text\":\"Normal Backpack\"}",
-        "minecraft:custom_data": "{backpacks:{contents:{slots:54}}}"
+        "minecraft:item_name": "{\"text\":\"Normal Backpack\"}"
       }
     }
   }

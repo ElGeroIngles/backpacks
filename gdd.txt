@@ -11,7 +11,8 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Backpacks upgradeadas no guardan sus contents.
+    • Añadir paginas nuevas a backpacks con 27 slots no funciona.
+    • A veces las paginas añadidas nuevas quitan arrows para ir atras.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).

@@ -9,12 +9,12 @@ execute unless predicate backpacks:bp_init run function backpacks:bp/summon/init
 # Id:
 function backpacks:bp/summon/id
 
-# Check if slots count needs to be updated:
-function backpacks:bp/summon/check
-
 # Get which hand has it:
 function backpacks:bp/check/offhand
 function backpacks:bp/check/mainhand
+
+# Check if slots count needs to be updated:
+function backpacks:bp/summon/check
 
 # Set contents:
 execute if entity @s[tag=backpacks.offhand] if score @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.type matches 0 run data modify entity @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] Items set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".backpacks.contents.pages[0]
