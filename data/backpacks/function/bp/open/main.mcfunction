@@ -1,5 +1,9 @@
 # @s & @p[advancements={backpacks:open=true}] is the player at @s! | Its menu is @n[tag=backpacks.backpack_menu_opened]!
 
+# Slots:
+function backpacks:bp/check/offhand
+function backpacks:bp/check/mainhand
+
 # Get menu:
 execute as @e[tag=backpacks.backpack_menu_ready] if score @s backpacks.id = @p[advancements={backpacks:open=true}] backpacks.id run tag @s add backpacks.backpack_menu_opened
 
@@ -8,7 +12,7 @@ execute unless entity @n[tag=backpacks.backpack_menu_opened] run function backpa
 execute unless entity @n[tag=backpacks.backpack_menu_opened] run return fail
 
 # Save:
-execute as @n[tag=backpacks.backpack_menu_opened] if score @s backpacks.type matches 0 run function backpacks:bp/container/save/main
+execute as @n[tag=backpacks.backpack_menu_opened] run function backpacks:bp/container/save/main
 
 # Reset:
 scoreboard players set @n[tag=backpacks.backpack_menu_opened] backpacks.pages 0

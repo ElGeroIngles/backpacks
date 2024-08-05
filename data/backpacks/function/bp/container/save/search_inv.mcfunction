@@ -9,7 +9,8 @@ $data modify entity @n[tag=backpacks.contents_placeholder] ArmorItems[3].compone
 
 # Give back the backpack:
 $execute store result storage backpacks:temp item.slot int 1 run data get entity @p[tag=backpacks.backpack_menu_save_this_player] Inventory[{components:{"minecraft:custom_data":{backpacks:{init:{id:$(id)}}}}}].Slot
-function backpacks:bp/container/save/save_to_inv with storage backpacks:temp item
+execute if entity @p[tag=backpacks.backpack_menu_save_this_player,tag=backpacks.offhand] run data modify storage backpacks:temp item.slot set value "weapon.offhand"
+function backpacks:bp/container/save/adjust_slot_inv with storage backpacks:temp item
 
 # Kill placeholder:
 kill @n[tag=backpacks.contents_placeholder]
