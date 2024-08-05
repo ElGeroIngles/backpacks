@@ -8,7 +8,7 @@
       }
     },
     "rewards": {
-      "function": "backpacks:bp/upgrade/1_to_2/main"
+      "function": "backpacks:bp/upgrade/to_2/main"
     }
   }
   
