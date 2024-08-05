@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "xxx",
+      "xzx",
+      "xxx"
+    ],
+    "key": {
+      "x": {
+        "item": "minecraft:leather"
+      },
+      "z": {
+        "item": "minecraft:chest"
+      }
+    },
+    "result": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:custom_model_data": 9951633,
+        "minecraft:item_name": "{\"text\":\"Small Backpack\"}",
+        "minecraft:max_stack_size": 1,
+        "minecraft:custom_data": "{backpacks:{contents:{slots:27}}}",
+        "minecraft:rarity": "uncommon"
+      }
+    }
+  }
+  

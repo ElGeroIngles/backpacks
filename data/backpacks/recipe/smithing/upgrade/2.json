@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+      "item": "minecraft:chest"
+    },
+    "base": {
+      "item": "minecraft:command_block"
+    },
+    "addition": {
+      "item": "minecraft:iron_ingot"
+    },
+    "result": {
+      "id": "minecraft:chain_command_block",
+      "components": {
+        "minecraft:item_name": "{\"text\":\"Normal Backpack\"}",
+        "minecraft:custom_data": "{backpacks:{contents:{slots:54}}}"
+      }
+    }
+  }
+  
