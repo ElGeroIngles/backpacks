@@ -11,6 +11,7 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
+    • Backpacks upgradeadas no guardan sus contents.
     • Crafteos (con sus colores).
     • Idiomas.
     • Añadir support de Trinkets (si se puede).
