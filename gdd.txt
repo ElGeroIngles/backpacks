@@ -12,4 +12,3 @@
 
 - Por Hacer:
     • Añadir support de Trinkets (si se puede).
-    • Advancements.
