@@ -19,4 +19,4 @@ execute as @p[tag=backpacks.backpack_menu_save_this_player] unless function back
 
 # Reset:
 tag @s remove backpacks.backpack_menu_save_this
-tag @p[tag=backpacks.backpack_menu_save_this_player] remove backpacks.backpack_menu_save_this_player
+tag @a remove backpacks.backpack_menu_save_this_player
