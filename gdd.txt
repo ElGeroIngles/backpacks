@@ -11,4 +11,5 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
+    • Quitar el nombre del menu en tercera persona.
     • Añadir support de Trinkets (si se puede).
