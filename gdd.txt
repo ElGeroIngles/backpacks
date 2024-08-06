@@ -11,6 +11,5 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Idiomas.
     • Añadir support de Trinkets (si se puede).
     • Advancements.
