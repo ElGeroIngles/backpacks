@@ -12,4 +12,10 @@
 
 - Por Hacer:
     • Quitar el nombre del menu en tercera persona.
+    • La backpack la puedes meter dentro y desaparece.
+    • Se puede dupear la backpack.
+    • No se puede abrir.
+    • No se guardan bien los items.
+    • Aparecen barcos.
+    • Las paginas no funcionan.
     • Añadir support de Trinkets (si se puede).
