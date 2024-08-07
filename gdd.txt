@@ -11,6 +11,7 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
+    • Modificar advancements para la nueva tier de backpacks.
     • Cuando pones algo en la backpack, la cierras y otra persona la abre se eliminas lo ultimo que pusiste (?).
     • Quitar el nombre del menu en tercera persona.
     • La backpack la puedes meter dentro y desaparece.
