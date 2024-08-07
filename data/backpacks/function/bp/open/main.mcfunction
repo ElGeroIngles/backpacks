@@ -1,4 +1,5 @@
 # @s & @p[advancements={backpacks:open=true}] is the player at @s! | Its menu is @n[tag=backpacks.backpack_menu_opened]!
+say open
 
 # Slots:
 function backpacks:bp/check/offhand
@@ -8,9 +9,9 @@ function backpacks:bp/check/mainhand
 execute as @e[tag=backpacks.backpack_menu_ready] if score @s backpacks.id = @p[advancements={backpacks:open=true}] backpacks.id run tag @s add backpacks.backpack_menu_opened
 
 # If opener is not owner:
-execute unless entity @n[tag=backpacks.backpack_menu_opened] run function backpacks:bp/open/not_owner
-execute unless entity @n[tag=backpacks.backpack_menu_opened] run return fail
-
+execute if function backpacks:bp/open/not_owner run return fail
+# execute unless entity @n[tag=backpacks.backpack_menu_opened] run return fail
+say open continue
 # Save:
 execute as @n[tag=backpacks.backpack_menu_opened] run function backpacks:bp/container/save/main
 

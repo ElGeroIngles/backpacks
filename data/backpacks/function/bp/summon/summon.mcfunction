@@ -33,5 +33,6 @@ execute if entity @s[tag=backpacks.mainhand] run data modify entity @n[tag=backp
 scoreboard players set @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.pages 0
 
 # Tags:
+execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run say me
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function senti:start
 tag @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] add backpacks.backpack_menu_ready
