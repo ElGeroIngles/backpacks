@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:repeating_command_block",
+      "id": "minecraft:structure_block",
       "components": {
         "minecraft:custom_model_data": 9951633
       }
@@ -22,7 +22,7 @@
     "backpacks:upgrade_to_max": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "backpacks:smithing/upgrade/3"
+        "recipe_id": "backpacks:smithing/upgrade/4"
       }
     }
   },
