@@ -1,5 +1,5 @@
 # @s & @p[advancements={backpacks:summon_bp=true}] is the player at @s!
-
+say summon
 # Summon:
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.backpack_menu","backpacks.invisible_minecart"],CustomName:'{"italic":false,"text":"Backpack"}'}
 
@@ -33,6 +33,6 @@ execute if entity @s[tag=backpacks.mainhand] run data modify entity @n[tag=backp
 scoreboard players set @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] backpacks.pages 0
 
 # Tags:
-execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run say me
 execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run function senti:start
+execute as @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] run team join backpacks.no_collision
 tag @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready] add backpacks.backpack_menu_ready

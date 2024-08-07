@@ -5,9 +5,14 @@ scoreboard objectives add backpacks.id dummy
 scoreboard objectives add backpacks.slots dummy
 scoreboard objectives add backpacks.pages dummy
 scoreboard objectives add backpacks.type dummy
+scoreboard objectives add backpacks.join minecraft.custom:minecraft.leave_game
 
 # Scorebaord tweaks:
 execute unless score $global backpacks.id matches 0.. run scoreboard players set $global backpacks.id 0
+
+# Teams:
+team add backpacks.no_collision
+team modify backpacks.no_collision collisionRule never
 
 tellraw @a [{"text":"[BP] ","color":"yellow"},{"translate":"load.backpacks.message.3","color":"green"}]
 tellraw @a [{"text":"[BP] ","color":"yellow"},{"text":"Backpacks!","underlined":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/backpacks"}},{"text":" - ","color":"gray"},{"translate":"load.backpacks.message.4","color":"blue"},{"text":"☽ Eclipse Studios","underlined":true,"color":"blue","clickEvent":{"action":"open_url","value":"https://www.youtube.com/@EclipseStudiosMC"}}]

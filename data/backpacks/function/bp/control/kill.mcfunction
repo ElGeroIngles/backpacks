@@ -11,9 +11,7 @@ say yes kill
 execute as @e[tag=backpacks.backpack_kill_this] run function backpacks:bp/container/save/main
 
 # Kill:
-execute as @e[tag=backpacks.backpack_kill_this] at @s run function senti:stop
-execute as @e[tag=backpacks.backpack_kill_this] run tp @s ~ -1000 ~
-execute as @e[tag=backpacks.backpack_kill_this] run kill @s
+execute as @e[tag=backpacks.backpack_kill_this] at @s run function backpacks:bp/control/kill_menu
 
 # Reset:
 tag @s remove backpacks.offhand
