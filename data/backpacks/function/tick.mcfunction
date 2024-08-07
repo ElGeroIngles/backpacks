@@ -18,6 +18,7 @@ execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{menu_bac
 # Upgrade backpacks if thrown (using advancements to check for the recipe is too fast):
 execute as @e[type=item,nbt={Item:{id:"minecraft:chain_command_block",components:{"minecraft:custom_data":{backpacks:{real_backpack:1b,tier:0}}}}}] run function backpacks:bp/upgrade/to_2/item
 execute as @e[type=item,nbt={Item:{id:"minecraft:repeating_command_block",components:{"minecraft:custom_data":{backpacks:{real_backpack:1b,tier:1}}}}}] run function backpacks:bp/upgrade/to_3/item
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_block",components:{"minecraft:custom_data":{backpacks:{real_backpack:1b,tier:2}}}}}] run function backpacks:bp/upgrade/to_4/item
 
 # On join:
 execute as @a[scores={backpacks.join=1..}] at @s run function backpacks:bp/join/main
