@@ -17,7 +17,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "backpacks:tree/adventurer",
+  "parent": "backpacks:tree/nes",
   "criteria": {
     "backpacks:upgrade_to_max": {
       "trigger": "minecraft:recipe_crafted",

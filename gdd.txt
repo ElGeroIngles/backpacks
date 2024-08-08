@@ -11,5 +11,4 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
-    • Modificar advancements para la nueva tier de backpacks.
     • Añadir support de Trinkets (si se puede).

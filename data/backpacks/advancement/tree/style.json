@@ -17,7 +17,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "backpacks:tree/adventurer",
+    "parent": "backpacks:tree/color",
     "criteria": {
       "backpacks:style_1_nether": {
         "trigger": "minecraft:recipe_crafted",
