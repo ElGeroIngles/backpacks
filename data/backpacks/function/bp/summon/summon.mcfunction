@@ -1,5 +1,5 @@
 # @s & @p[advancements={backpacks:summon_bp=true}] is the player at @s!
-say summon
+
 # Summon:
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.backpack_menu","backpacks.invisible_minecart"],CustomName:'{"italic":false,"text":"Backpack"}'}
 

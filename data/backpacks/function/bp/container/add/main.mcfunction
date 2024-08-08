@@ -1,5 +1,5 @@
 # @p[advancements={backpacks:summon_bp=true}] is the player at player! | The menu is @s & @n[tag=backpacks.backpack_menu,tag=!backpacks.backpack_menu_ready]! | Item is in container.0!
-say main
+
 # Count pages:
 execute store result score $pages_old backpacks.pages run data get entity @s Items[0].components."minecraft:custom_data".backpacks.contents.pages
 

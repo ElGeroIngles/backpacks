@@ -1,6 +1,5 @@
 # @p[advancements={backpacks:summon_bp=true}] is the player at him! | @s is the menu! | The menu has the backpack item in container.0!
-say add
-tellraw @a {"score":{"name":"@s","objective":"backpacks.pages"},"color":"dark_purple"}
+
 # Make placeholder menu:
 summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.backpack_menu_page_placeholder","backpacks.invisible_minecart"]}
 

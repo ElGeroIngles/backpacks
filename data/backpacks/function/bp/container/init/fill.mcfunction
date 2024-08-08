@@ -8,7 +8,6 @@ scoreboard players set $available_slots backpacks.slots 27
 execute store result score $occupied_slots backpacks.slots if items entity @s container.* *[minecraft:custom_data~{menu_backpack:{}}]
 scoreboard players operation $available_slots backpacks.slots -= $occupied_slots backpacks.slots
 execute if score $available_slots backpacks.slots <= @s backpacks.slots run return fail
-say fill
 
 # Place:
 $item replace entity @s[nbt=!{Items:[{Slot:$(c_slot)b}]}] container.$(c_slot) with black_stained_glass_pane[custom_model_data=9951631,custom_name='{"text":""}',custom_data={menu_backpack:{empty:1b}},hide_tooltip={}]

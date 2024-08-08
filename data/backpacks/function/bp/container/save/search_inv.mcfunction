@@ -8,8 +8,6 @@ $data modify entity @n[tag=backpacks.contents_placeholder] ArmorItems[3] set fro
 $execute if data entity @n[tag=backpacks.contents_placeholder] ArmorItems[3].components."minecraft:custom_data".backpacks.contents.pages[0] run data modify entity @n[tag=backpacks.contents_placeholder] ArmorItems[3].components."minecraft:custom_data".backpacks.contents.pages[$(page)] set from entity @s Items
 execute unless data entity @n[tag=backpacks.contents_placeholder] ArmorItems[3].components."minecraft:custom_data".backpacks.contents.pages[0] run data modify entity @n[tag=backpacks.contents_placeholder] ArmorItems[3].components."minecraft:custom_data".backpacks.contents.pages append from entity @s Items
 
-# $tellraw @a {"nbt":"ArmorItems[3].components.\"minecraft:custom_data\".backpacks.contents.pages[$(page)]","entity":"@n[tag=backpacks.contents_placeholder]","color":"dark_purple"}
-
 # Give back the backpack:
 $execute store result storage backpacks:temp item.slot int 1 run data get entity @p[tag=backpacks.backpack_menu_save_this_player] Inventory[{components:{"minecraft:custom_data":{backpacks:{init:{id:$(id)}}}}}].Slot
 execute if entity @p[tag=backpacks.backpack_menu_save_this_player,tag=backpacks.offhand] run data modify storage backpacks:temp item.slot set value "weapon.offhand"
