@@ -27,5 +27,5 @@ scoreboard players operation @n[tag=backpacks.interaction,tag=!backpacks.interac
 tag @n[tag=backpacks.interaction,tag=!backpacks.interaction_ready] add backpacks.interaction_ready
 
 # Reset:
-tag @n[tag=backpacks.backpack_menu_opened] add backpacks.backpack_menu_opened
+tag @n[tag=backpacks.backpack_menu_opened] remove backpacks.backpack_menu_opened
 advancement revoke @s only backpacks:open
