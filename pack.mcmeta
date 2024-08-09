@@ -6,7 +6,23 @@
         48,
         48
       ],
-      "description": "Backpacks - ElGeroIngles"
+      "description": [
+        {
+          "text": "Backpacks! ",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "- ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "☽ Eclipse Studios",
+          "color": "blue",
+          "bold": false
+        }
+      ]
     }
   }
   
