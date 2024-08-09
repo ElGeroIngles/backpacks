@@ -325,97 +325,97 @@
       "backpacks:colors_4_black": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/black"
+          "recipe_id": "backpacks:smithing/colors/4/black"
         }
       },
       "backpacks:colors_4_blue": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/blue"
+          "recipe_id": "backpacks:smithing/colors/4/blue"
         }
       },
       "backpacks:colors_4_brown": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/brown"
+          "recipe_id": "backpacks:smithing/colors/4/brown"
         }
       },
       "backpacks:colors_4_cyan": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/cyan"
+          "recipe_id": "backpacks:smithing/colors/4/cyan"
         }
       },
       "backpacks:colors_4_gray": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/gray"
+          "recipe_id": "backpacks:smithing/colors/4/gray"
         }
       },
       "backpacks:colors_4_green": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/green"
+          "recipe_id": "backpacks:smithing/colors/4/green"
         }
       },
       "backpacks:colors_4_light_blue": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/light_blue"
+          "recipe_id": "backpacks:smithing/colors/4/light_blue"
         }
       },
       "backpacks:colors_4_light_gray": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/light_gray"
+          "recipe_id": "backpacks:smithing/colors/4/light_gray"
         }
       },
       "backpacks:colors_4_lime": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/lime"
+          "recipe_id": "backpacks:smithing/colors/4/lime"
         }
       },
       "backpacks:colors_4_magenta": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/magenta"
+          "recipe_id": "backpacks:smithing/colors/4/magenta"
         }
       },
       "backpacks:colors_4_orange": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/orange"
+          "recipe_id": "backpacks:smithing/colors/4/orange"
         }
       },
       "backpacks:colors_4_pink": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/pink"
+          "recipe_id": "backpacks:smithing/colors/4/pink"
         }
       },
       "backpacks:colors_4_purple": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/purple"
+          "recipe_id": "backpacks:smithing/colors/4/purple"
         }
       },
       "backpacks:colors_4_red": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/red"
+          "recipe_id": "backpacks:smithing/colors/4/red"
         }
       },
       "backpacks:colors_4_white": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/white"
+          "recipe_id": "backpacks:smithing/colors/4/white"
         }
       },
       "backpacks:colors_4_yellow": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "backpacks:smithing/colors/3/yellow"
+          "recipe_id": "backpacks:smithing/colors/4/yellow"
         }
       },
       "backpacks:colors_4_nether": {
