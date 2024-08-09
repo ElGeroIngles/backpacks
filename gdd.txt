@@ -11,4 +11,5 @@
 • 💡: change in gdd.txt (idea/change)
 
 - Por Hacer:
+    • No se cierra bien a veces.
     • Añadir support de Trinkets (si se puede).
