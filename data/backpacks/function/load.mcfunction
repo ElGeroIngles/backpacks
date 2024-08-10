@@ -8,7 +8,7 @@ scoreboard objectives add backpacks.type dummy
 scoreboard objectives add backpacks.join minecraft.custom:minecraft.leave_game
 
 # Scorebaord tweaks:
-execute unless score $global backpacks.id matches 0.. run scoreboard players set $global backpacks.id 0
+execute unless score $global backpacks.id matches 1.. run scoreboard players set $global backpacks.id 1
 
 # Teams:
 team add backpacks.no_collision

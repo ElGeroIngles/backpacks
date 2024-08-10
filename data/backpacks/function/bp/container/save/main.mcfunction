@@ -1,5 +1,5 @@
 # @s is the menu!
-
+# say save main
 # Get Player:
 tag @s add backpacks.backpack_menu_save_this
 execute as @a if score @s backpacks.id = @n[tag=backpacks.backpack_menu_save_this] backpacks.id run tag @s add backpacks.backpack_menu_save_this_player

@@ -1,5 +1,5 @@
 # @s & @p[advancements={backpacks:holding_bp=true}] is the player at @s!
-# Check if id of item is the same as the menu:
+# Check if id of item is the same as the player:
 
 # Get item Id:
 execute if predicate backpacks:bp/offhand store result score $item_id backpacks.id run data get entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".backpacks.init.id

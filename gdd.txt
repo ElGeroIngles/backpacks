@@ -11,5 +11,4 @@
 • 💡: change in gdd.txt (idea/change)
 
 - To Do:
-    • You can dupe backpacks if you change slots with another one of a different tier.
     • Add Trinkets support (if possible).
