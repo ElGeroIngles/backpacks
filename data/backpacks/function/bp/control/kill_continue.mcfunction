@@ -2,10 +2,10 @@
 # say kill continue
 
 # Save container:
-execute as @e[tag=backpacks.backpack_kill_this] run function backpacks:bp/container/save/main
+execute as @n[tag=backpacks.backpack_kill_this] run function backpacks:bp/container/save/main
 
 # Kill:
-execute as @e[tag=backpacks.backpack_kill_this] at @s run function backpacks:bp/control/kill_menu
+execute as @n[tag=backpacks.backpack_kill_this] at @s run function backpacks:bp/control/kill_menu
 
 # Reset:
 tag @s remove backpacks.offhand
