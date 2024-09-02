@@ -12,3 +12,6 @@
 
 - To Do:
     • Add Trinkets support (if possible).
+    • Remove the "main" logon message.
+    • Fix putting backpack inside itself (#7).
+    • Add another layer of protection to the team.
