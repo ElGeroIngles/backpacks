@@ -10,8 +10,14 @@
 • ❤️: Testing
 • 💡: change in gdd.txt (idea/change)
 
-- To Do:
+- To-Do:
     • Add Trinkets support (if possible).
-    • Remove the "main" logon message.
     • Fix putting backpack inside itself (#7).
     • Add another layer of protection to the team.
+    • Items in the backpack get deleted when player tps (#9).
+    • Dupe (#10)
+    • Add blacklisted items as an option (Backpacks, Shulkers (not empty ones)).
+    • Make backpacks equippable.
+    • Make so you can open the backpack while equipped when crouching.
+    • (?) Move smithing table recipes to crafting table recipes.
+    • (?) Fix backpack duplication when removing it from the offhand.
