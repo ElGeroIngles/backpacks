@@ -6,6 +6,7 @@ scoreboard objectives add backpacks.slots dummy
 scoreboard objectives add backpacks.pages dummy
 scoreboard objectives add backpacks.type dummy
 scoreboard objectives add backpacks.join minecraft.custom:minecraft.leave_game
+scoreboard objectives add backpacks.crouch_timer dummy
 
 # Scorebaord tweaks:
 execute unless score $global backpacks.id matches 1.. run scoreboard players set $global backpacks.id 1

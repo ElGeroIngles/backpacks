@@ -12,7 +12,6 @@
 
 - To-Do:
     • Add Trinkets support (if possible).
-    • Fix putting backpack inside itself (#7).
     • Add another layer of protection to the team.
     • Items in the backpack get deleted when player tps (#9).
     • Dupe (#10)
