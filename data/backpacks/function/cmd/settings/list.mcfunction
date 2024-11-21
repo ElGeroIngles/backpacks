@@ -1,0 +1,1 @@
+# Sends to chat a list of every setting, what it does and whether it's state by default:
