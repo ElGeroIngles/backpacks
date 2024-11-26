@@ -8,13 +8,12 @@ scoreboard objectives add backpacks.type dummy
 scoreboard objectives add backpacks.join minecraft.custom:minecraft.leave_game
 scoreboard objectives add backpacks.crouch_timer dummy
 scoreboard objectives add backpacks.settings dummy
+scoreboard objectives add backpacks.main dummy
 
-# Scorebaord tweaks:
-execute unless score $global backpacks.id matches 1.. run scoreboard players set $global backpacks.id 1
-execute unless score $blacklisted_items backpacks.settings matches 0.. run scoreboard players set $blacklisted_items backpacks.settings 1
+# Run on first start of the world:
+execute unless score $init backpacks.main matches 1.. run function backpacks:init/world
 
 # Teams:
-team add backpacks.no_collision
 team modify backpacks.no_collision collisionRule pushOwnTeam
 
 # Tags:
