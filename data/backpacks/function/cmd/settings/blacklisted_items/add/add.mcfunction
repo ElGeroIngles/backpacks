@@ -14,6 +14,7 @@ scoreboard players add $blacklisted_items_id backpacks.settings 1
 
 # Save components:
 execute if data entity @s SelectedItem.components run data modify storage backpacks:blacklisted_items Items[-1].components set from entity @s SelectedItem.components
+# execute if data entity @s SelectedItem.components run function backpacks:cmd/settings/blacklisted_items/add/save_components
 
 # Set check type ("predicates" or "components", default "predicates")
 data modify storage backpacks:blacklisted_items Items[-1].type set value "predicates"
