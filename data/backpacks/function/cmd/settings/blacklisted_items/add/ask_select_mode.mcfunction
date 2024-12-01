@@ -13,7 +13,7 @@ $execute if data storage backpacks:blacklisted_items Items[{id:$(id),type:"compo
 # $execute if data storage backpacks:blacklisted_items Items[{id:$(id),type:"components"}] run tellraw @s [{"text":"[\"","color":"gray","clickEvent":{"action":"run_command","value":"/function backpacks:cmd/settings/blacklisted_items/add/change_type {id:$(id),new_type:\"predicates\"}"}},{"translate":"settings.backpacks.blacklisted_items.predicates","color":"gray","clickEvent":{"action":"run_command","value":"/function backpacks:cmd/settings/blacklisted_items/add/change_type {id:$(id),new_type:\"predicates\"}"}},{"text":"\"]","color":"gray","clickEvent":{"action":"run_command","value":"/function backpacks:cmd/settings/blacklisted_items/add/change_type {id:$(id),new_type:\"predicates\"}"}},{"text":" / ","color":"dark_gray"},{"text":"[\"","color":"yellow"},{"translate":"settings.backpacks.blacklisted_items.components","color":"yellow"},{"text":"\"]","color":"yellow"}]
 
 # Make the predicate:
-function backpacks:cmd/settings/blacklisted_items/add/predicate/main
+function backpacks:cmd/settings/blacklisted_items/add/predicate/init
 
 # Sounds:
 playsound ui.button.click ambient
