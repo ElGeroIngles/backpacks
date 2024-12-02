@@ -8,6 +8,6 @@
 say check
 $say $(conditions)
 # Check (if it passes then it will let the rest of the function to run, if not it will not):
-$execute if predicate $(conditions) run return 1
-$execute unless predicate $(conditions) run return fail
+$execute unless predicate $(conditions) run say fail
+$execute if predicate $(conditions) run say true
 say end

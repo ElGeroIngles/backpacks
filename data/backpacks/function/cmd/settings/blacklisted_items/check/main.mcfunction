@@ -5,9 +5,10 @@
 # Check if the new item is in the "blacklisted items" list
 say main
 # Cancel if there's no items to check:
+execute if score $blacklisted_items backpacks.settings matches 0 run return fail
 execute if data storage backpacks:blacklisted_items {Items:[]} run return fail
 
 # Check:
-return run function backpacks:cmd/settings/blacklisted_items/check/check with storage backpacks:blacklisted_items Predicate
+function backpacks:cmd/settings/blacklisted_items/check/check with storage backpacks:blacklisted_items Predicate
 
 say a
