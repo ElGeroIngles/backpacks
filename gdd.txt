@@ -19,4 +19,3 @@
     • (?) Make backpacks equippable.
         • Make so you can open the backpack while equipped when crouching.
     • Move smithing table dyeing recipes to crafting table recipes.
-    • Add a help menu.
