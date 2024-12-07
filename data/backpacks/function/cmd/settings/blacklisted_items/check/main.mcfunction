@@ -7,6 +7,9 @@
 # Cancel if the setting isn't on:
 execute if score $blacklisted_items backpacks.settings matches 0 run return fail
 
+# Cancel if backpack is a ender backpack:
+execute if score @s backpacks.type matches 1 run return fail
+
 # Check:
 execute unless predicate backpacks:settings/blacklisted_items/list unless items entity @s container.* #shulker_boxes[!minecraft:container=[]] run return fail
 
