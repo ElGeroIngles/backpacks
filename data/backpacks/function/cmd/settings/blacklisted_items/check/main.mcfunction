@@ -6,10 +6,8 @@
 
 # Cancel if the setting isn't on:
 execute if score $blacklisted_items backpacks.settings matches 0 run return fail
-# execute if data storage backpacks:blacklisted_items {Items:[]} run return fail
 
 # Check:
-# function backpacks:cmd/settings/blacklisted_items/check/check with storage backpacks:blacklisted_items Predicate
 execute unless predicate backpacks:settings/blacklisted_items/list unless items entity @s container.* #shulker_boxes[!minecraft:container=[]] run return fail
 
 # Get difference between the two containers (result is in backpacks:container Output):
