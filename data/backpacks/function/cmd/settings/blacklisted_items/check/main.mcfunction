@@ -17,6 +17,10 @@ data modify storage backpacks:container Container1 set from storage senti:api ol
 data modify storage backpacks:container Container2 set from entity @s Items
 function backpacks:api/container/difference/main
 
+# Cancel if the item is the backpack itself:
+execute store result score $blacklisted_items_bp_id backpacks.settings run data get storage backpacks:container Output[0].components."minecraft:custom_data".backpacks.init.id
+execute if score $blacklisted_items_bp_id backpacks.settings = @s backpacks.id run return fail
+
 # Give difference:
 execute at @p[tag=senti.viewer] run summon chest_minecart ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomDisplayTile:1b,Tags:["backpacks.setting_give_difference","backpacks.invisible_minecart"]}
 data modify entity @n[tag=backpacks.setting_give_difference] Items set from storage backpacks:container Output
