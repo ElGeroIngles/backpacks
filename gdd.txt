@@ -18,4 +18,3 @@
     • (?) Dupe (#10)
     • (?) Make backpacks equippable.
         • Make so you can open the backpack while equipped when crouching.
-    • If you open a backpack that was closed on a different page it will unlock all slots in that page.

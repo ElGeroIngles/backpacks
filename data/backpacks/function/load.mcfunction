@@ -10,6 +10,7 @@ scoreboard objectives add backpacks.crouch_timer dummy
 scoreboard objectives add backpacks.settings dummy
 scoreboard objectives add backpacks.main dummy
 scoreboard objectives add backpacks.api.container dummy
+scoreboard objectives add backpacks.api.GetNOfSlotsThatShouldBeLocked dummy
 
 # Run on first start of the world:
 execute unless score $init backpacks.main matches 1.. run function backpacks:init/world
