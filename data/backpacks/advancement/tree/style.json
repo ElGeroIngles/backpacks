@@ -82,6 +82,32 @@
         "conditions": {
           "recipe_id": "backpacks:smithing/colors/ender/end"
         }
+      },
+      
+
+      "backpacks:style_1_christmas": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "backpacks:smithing/colors/1/christmas"
+        }
+      },
+      "backpacks:style_2_christmas": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "backpacks:smithing/colors/2/christmas"
+        }
+      },
+      "backpacks:style_3_christmas": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "backpacks:smithing/colors/3/christmas"
+        }
+      },
+      "backpacks:style_4_christmas": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "backpacks:smithing/colors/4/christmas"
+        }
       }
 
     },
@@ -98,7 +124,12 @@
         "backpacks:style_4_autumnal",
 
         "backpacks:style_ender_normal",
-        "backpacks:style_ender_end"
+        "backpacks:style_ender_end",
+        
+        "backpacks:style_1_christmas",
+        "backpacks:style_2_christmas",
+        "backpacks:style_3_christmas",
+        "backpacks:style_4_christmas"
       ]
     ]
   }
