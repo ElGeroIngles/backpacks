@@ -1,0 +1,10 @@
+{
+    "name": "backpacks",
+    "description": "Backpacks dev datapack",
+    "data_pack": {
+        "load": ["src/datapack"]
+    },
+    "resource_pack": {
+        "load": ["src/resourcepack"]
+    }
+}

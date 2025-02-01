@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "type": "single",
+            "resource": "entity/chest/normal"
+        },
+        {
+            "type": "directory",
+            "source": "entity",
+            "prefix": "entity/"
+        },
+        {
+            "type": "directory",
+            "source": "gui",
+            "prefix": "gui/"
+        }
+    ]
+}
