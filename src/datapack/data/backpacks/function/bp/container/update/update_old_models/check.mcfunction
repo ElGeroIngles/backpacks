@@ -5,7 +5,8 @@
 # Check if current slot has an item we need to update:
 
 # Check if not:
-$execute if data entity @s Items[{Slot:$(temp)b}].components."minecraft:custom_data".backpacks.contents.pages[0][{components:{"minecraft:custom_data":{menu_backpack:{}}}}].components."minecraft:item_model" run function backpacks:bp/container/update/update_old_models/next
+$execute unless items entity @s container.$(temp) *[minecraft:custom_data~{menu_backpack:{}}] run function backpacks:bp/container/update/update_old_models/next
+$execute if items entity @s container.$(temp) *[minecraft:custom_data~{menu_backpack:{}}] if data entity @s Items[{Slot:$(temp)b}].components."minecraft:item_model" run function backpacks:bp/container/update/update_old_models/next
 
 # Check if we need to update:
-$execute unless data entity @s Items[{Slot:$(temp)b}].components."minecraft:custom_data".backpacks.contents.pages[0][{components:{"minecraft:custom_data":{menu_backpack:{}}}}].components."minecraft:item_model" run function backpacks:bp/container/update/update_old_models/update with storage backpacks:temp
+$execute if score $temp_slot_update_old_item backpacks.slots matches 0..26 if items entity @s container.$(temp) *[minecraft:custom_data~{menu_backpack:{}}] unless data entity @s Items[{Slot:$(temp)b}].components."minecraft:item_model" run function backpacks:bp/container/update/update_old_models/update with storage backpacks:temp

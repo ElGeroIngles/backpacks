@@ -10,4 +10,4 @@ $execute if data entity @s Items[{Slot:$(temp)b}].components."minecraft:custom_d
 $execute if data entity @s Items[{Slot:$(temp)b}].components."minecraft:custom_data".menu_backpack.empty run item modify entity @s container.$(temp) backpacks:update_old_models/gui/empty
 
 # Update next (if needed):
-function backpacks:bp/container/update/update_old_models/next
+execute if score $temp_slot_update_old_item backpacks.slots matches 0..26 run function backpacks:bp/container/update/update_old_models/next
