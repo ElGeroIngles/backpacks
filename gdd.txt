@@ -18,3 +18,4 @@
     • (?) Dupe (#10)
     • (?) Make backpacks equippable.
         • Make so you can open the backpack while equipped when crouching.
+    • Fix: If disabled the "blacklisted items", then enter an item from the blacklisted list and then setting the setting to true you can't place items inside the backpack unless you remove the blacklisted items from the bp (posible duplication).
