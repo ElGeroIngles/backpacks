@@ -8,7 +8,7 @@
 • ❌: Removed something
 • 📝: Docs
 • ❤️: Testing
-• 💡: Change in gdd.txt (idea/change)
+• 💡: Change in guidelines.md (idea/change)
 • ↩️: Revert changes
 • 🚀: Improve efficiency
 
@@ -19,4 +19,4 @@
     • (?) Make backpacks equippable.
         • Make so you can open the backpack while equipped when crouching.
     • Fix: If disabled the "blacklisted items", then enter an item from the blacklisted list and then setting the setting to true you can't place items inside the backpack unless you remove the blacklisted items from the bp (posible duplication) (#26).
-    • Fix: Crash when scrolling on bundle which is on a backpack (#27) -> Sentinel Error.
+    • Fix: Crash when scrolling on bundle which is on a backpack (#27) -> Sentinel Error -> Current fix: Prevent bundles from entering a backpack (WARNING: This still affects ender backpacks)
