@@ -6,7 +6,7 @@
   "result": {
     "id": "minecraft:chain_command_block",
     "components": {
-      "minecraft:item_name": "{\"translate\":\"item.backpacks.normal.2\"}"
+      "minecraft:item_name": {translate:'item.backpacks.normal.2'}
     }
   }
 }
