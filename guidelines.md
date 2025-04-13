@@ -20,4 +20,3 @@
         • Make so you can open the backpack while equipped when crouching.
     • Fix: Crash when scrolling on bundle which is on a backpack (#27) -> Sentinel Error -> Current fix: Prevent bundles from entering a backpack (WARNING: This still affects ender backpacks)
     • Fix: Upgrade recipes loose their previous dye/style (1.21.4-1.21.5).
-    • Fix: When unequipping the backpack from the inventory from the offhand it deletes your mainhand item.
