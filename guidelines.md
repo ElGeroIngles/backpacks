@@ -25,3 +25,4 @@
     • Fix: When upgrading a backpack it sometimes don't unlock the new slots (#28).
     • Fix: When tp the backpack loses everything in it (#29).
     • Fix: Items get deleted randomly (#30).
+    • Fix: When a locked slot is missing in the second row and you reopen the backpack the entire row is unlocked.
