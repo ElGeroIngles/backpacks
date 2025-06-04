@@ -21,6 +21,6 @@
     • Fix: Crash when scrolling on bundle which is on a backpack (#27) -> Sentinel Error -> Current fix: Prevent bundles from entering a backpack (WARNING: This still affects ender backpacks)
     • Fix: Upgrade recipes loose their previous dye/style (1.21.4-1.21.5).
 
-    • Fix: When upgrading a backpack it sometimes don't unlock the new slots (#28).
+    • Fix: When upgrading a backpack it sometimes doesn't unlock the new slots (#28).
     • Fix: When tp the backpack loses everything in it (#29).
     • Fix: Items get deleted randomly (#30).
