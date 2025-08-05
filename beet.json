@@ -6,5 +6,11 @@
     },
     "resource_pack": {
         "load": ["src/resourcepack"]
-    }
+    },
+    "require": [
+        "plugins.sorters.extend_data_pack"
+    ],
+    "pipeline": [
+        "plugins.sorters"
+    ]
 }
