@@ -1,16 +1,16 @@
 - Commit:
 
-• 🐛: Bug related
-• ✨: Feature added
-• 🎨: Style related
-• 🎵: SFX related
-• 🛠️: Touched something
-• ❌: Removed something
-• 📝: Docs
-• ❤️: Testing
-• 💡: Change in guidelines.md (idea/change)
-• ↩️: Revert changes
-• 🚀: Improve efficiency
+    - 🐛: Bug related
+    - ✨: Feature added
+    - 🎨: Style related
+    - 🎵: SFX related
+    - 🛠️: Touched something
+    - ❌: Removed something
+    - 📝: Docs
+    - ❤️: Testing
+    - 💡: Change in guidelines.md (idea/change)
+    - ↩️: Revert changes
+    - 🚀: Improve efficiency
 
 - To-Do:
     - Fixes:
