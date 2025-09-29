@@ -28,3 +28,6 @@
         - (?) Add another layer of protection to the team
         - Make backpacks equippable (Accesory support)
             - Make so you can open the backpack while equipped when crouching
+
+- Ideas:
+    - Maybe the item display used in Sentinel should be loaded at all times, and if not it may be the one causing the bugs with the items disappearing from backpacks.
